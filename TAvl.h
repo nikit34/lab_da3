@@ -65,21 +65,18 @@ protected:
 	}
 
 	TAvlNode* Rebalance(TAvlNode* node) {
-		if (node == nullptr) {
+		if (node == nullptr)
 			return nullptr;
-		}
 		Reheight(node);
 		int balanceRes = Balance(node);
 		if (balanceRes == -2) {
-			if (Balance(node->right) == 1) {
+			if (Balance(node->right) == 1)
 				return BigRotateLeft(node);
-			}
 			return RotateLeft(node);
 		}
 		else if (balanceRes == 2) {
-			if (Balance(node->left) == -1) {
+			if (Balance(node->left) == -1)
 				return BigRotateRight(node);
-			}
 			return RotateRight(node);
 		}
 		return node;
@@ -88,7 +85,7 @@ protected:
 	TAvlNode* InsertPrint(TAvlNode* node, K k, V v) {
 		if (node == nullptr) {
 			try {
-				node = new TAvlNode(k, v);//�������� ����� std::move(key)
+				node = new TAvlNode(k, v); // std::move(k)
 			}
 			catch (std::bad_alloc& e) {
 				std::cout << "ERROR: " << e.what() << "\n";
@@ -97,41 +94,35 @@ protected:
 			std::cout << "OK\n";
 			return node;
 		}
-		if (k < node->key) {
+		if (k < node->key)
 			node->left = InsertPrint(node->left, k, v);
-		}
-		else if (k > node->key) {
+		else if (k > node->key)
 			node->right = InsertPrint(node->right, k, v);
-		}
-		else {
+		else
 			std::cout << "Exist\n";
-		}
 		return Rebalance(node);
 	}
 
 	TAvlNode* Insert(TAvlNode* node, K k, V v) {
 		if (node == nullptr) {
 			try {
-				node = new TAvlNode(k, v);//�������� ����� std::move(key)
+				node = new TAvlNode(k, v);// std::move(k)
 			}
 			catch (std::bad_alloc& e) {
 				return nullptr;
 			}
 			return node;
 		}
-		if (k < node->key) {
+		if (k < node->key)
 			node->left = Insert(node->left, k, v);
-		}
-		else if (k > node->key) {
+		else if (k > node->key)
 			node->right = Insert(node->right, k, v);
-		}
 		return Rebalance(node);
 	}
 
 	TAvlNode* RemoveMin(TAvlNode* node, TAvlNode* tempNode) {
-		if (tempNode->left != nullptr) {
+		if (tempNode->left != nullptr)
 			tempNode->left = RemoveMin(node, tempNode->left);
-		}
 		else {
 			TAvlNode* rightChild = tempNode->right;
 			node->key = std::move(tempNode->key); //std::move
@@ -143,15 +134,12 @@ protected:
 	}
 
 	TAvlNode* Remove(TAvlNode* node, K k) {
-		if (node == nullptr) {
+		if (node == nullptr)
 			return nullptr;
-		}
-		if (k < node->key) {
+		if (k < node->key)
 			node->left = Remove(node->left, k);
-		}
-		else if (k > node->key) {
+		else if (k > node->key)
 			node->right = Remove(node->right, k);
-		}
 		else {
 			TAvlNode* leftChild = node->left;
 			TAvlNode* rightChild = node->right;
@@ -174,15 +162,13 @@ protected:
 
 	TAvlNode* RemovePrint(TAvlNode* node, K k) {
 		if (node == nullptr) {
-			std::cout << "NoSuchWord\n";
+			std::cout << "No Such Word" << std::endl;
 			return nullptr;
 		}
-		if (k < node->key) {
+		if (k < node->key)
 			node->left = RemovePrint(node->left, k);
-		}
-		else if (k > node->key) {
+		else if (k > node->key)
 			node->right = RemovePrint(node->right, k);
-		}
 		else {
 			TAvlNode* leftChild = node->left;
 			TAvlNode* rightChild = node->right;
@@ -208,37 +194,26 @@ protected:
 	}
 
 	TAvlNode* Search(TAvlNode* node, K k) {
-		if (node == nullptr) {
+		if (node == nullptr)
 			return nullptr;
-		}
 		for (TAvlNode* iter = node; iter != nullptr; ) {
-			if (k < iter->key) {
+			if (k < iter->key)
 				iter = iter->left;
-			}
-			else if (k > iter->key) {
+			else if (k > iter->key)
 				iter = iter->right;
-			}
-			else {
+			else
 				return iter;
-			}
 		}
 		return nullptr;
 	}
 
 	void PrintTree(TAvlNode* node) {
-		static int cnt = 0;
 		if (node != nullptr) {
-			cnt++;
-			PrintTree(node->right);
-			cnt--;
-			for (int i = 0; i < cnt; i++) {
-				std::cout << "\t";
-			}
-			std::cout << node->key << "\n";
-			cnt++;
+			std::cout << "( " << node->value << " )";
 			PrintTree(node->left);
-			cnt--;
+			PrintTree(node->right);
 		}
+		std::cout << std::endl;
 	}
 
 public:

@@ -78,16 +78,16 @@ struct TVector {
 
 	void PushBack(const char& ch) {
 		if (this->size + 1 == this->capacity) {
-			int newStorageSize = this->capacity ? this->capacity * 2 : 1;
+			int newStorageSize = this->capacity ? this->capacity + this->capacity : 1;
 			char* newStorage = new char[newStorageSize];
 			std::copy(this->data, this->data + this->capacity, newStorage);
 			delete[] this->data;
 			this->data = newStorage;
 			this->capacity = newStorageSize;
+			newStorage = nullptr;
 		}
-
 		this->data[this->size] = ch;
-		this->size++;
+		++this->size;
 		this->data[this->size] = '\0';
 	}
 
@@ -107,24 +107,22 @@ struct TVector {
 	}
 
 	char * end() {
-		if (data != nullptr) {
-			return this->data + this->size;
-		}
-		return nullptr;
+		if (data == nullptr)
+			return nullptr;
+		return this->data + this->size;
 	}
 
 	const char * end() const {
-		if (this->data != nullptr) {
-			return this->data + this->size;
-		}
-		return nullptr;
+		if (this->data != nullptr)
+			return nullptr;
+		return this->data + this->size;
 	}
 
 	const char* Cstr() const {
 		return this->data;
 	}
 
-	int Size() const {
+	uint64_t Size() const {
 		return this->size;
 	}
 
@@ -134,11 +132,9 @@ struct TVector {
 	}
 
 	const char& At(int index) const {
-		if (index < 0 || index > this->size) {
-			throw std::out_of_range("You are doing this wrong!");
-		}
-
-		return this->data[index];
+		if (index >= 0 && index <= this->size)
+			return this->data[index];
+		throw std::out_of_range("You are doing this wrong!");
 	}
 
 	char& At(int index) {
@@ -158,33 +154,29 @@ struct TVector {
 	friend std::istream& operator>>(std::istream& is, TVector& str);
 
 private:
-	int capacity;
-	int size;
+	uint64_t capacity;
+	uint64_t size;
 	char* data;
 };
 
 std::ostream& operator<<(std::ostream& os, const TVector& str) {
-	for (auto ch : str) {
+	for (auto ch : str)
 		os << ch;
-	}
 	return os;
 }
 
 std::istream& operator>>(std::istream& is, TVector& str) {
 	char buf[300];
-	if (is >> buf) {
+	if (is >> buf)
 		str = buf;
-	}
 	return is;
 }
 
 bool operator<(const TVector& lhs, const TVector& rhs) {
-	int minSize = std::min(lhs.Size(), rhs.Size());
-	for (int i = 0; i < minSize; i++) {
-		if (lhs[i] != rhs[i]) {
+	uint64_t minSize = std::min(lhs.Size(), rhs.Size());
+	for (uint64_t i = 0; i < minSize; ++i)
+		if (lhs[i] != rhs[i])
 			return lhs[i] < rhs[i];
-		}
-	}
 	return lhs.Size() < rhs.Size();
 }
 
@@ -199,5 +191,3 @@ bool operator==(const TVector& lhs, const TVector& rhs) {
 bool operator!=(const TVector& lhs, const TVector& rhs) {
 	return !(lhs == rhs);
 }
-
-
