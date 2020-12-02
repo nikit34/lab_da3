@@ -1,0 +1,539 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total
+ time   seconds   seconds    calls  Ts/call  Ts/call  name
+  0.00      0.00     0.00      170     0.00     0.00  TVector::At(int) const
+  0.00      0.00     0.00      104     0.00     0.00  TVector::At(int)
+  0.00      0.00     0.00      104     0.00     0.00  TVector::operator[](int)
+  0.00      0.00     0.00       66     0.00     0.00  TVector::operator[](int) const
+  0.00      0.00     0.00       64     0.00     0.00  char* std::__niter_base<char*>(char*)
+  0.00      0.00     0.00       61     0.00     0.00  TVector::Size() const
+  0.00      0.00     0.00       38     0.00     0.00  TVector::~TVector()
+  0.00      0.00     0.00       32     0.00     0.00  char* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<char>(char const*, char const*, char*)
+  0.00      0.00     0.00       32     0.00     0.00  char const* std::__miter_base<char const*>(char const*)
+  0.00      0.00     0.00       32     0.00     0.00  char* std::__miter_base<char*>(char*)
+  0.00      0.00     0.00       32     0.00     0.00  char const* std::__niter_base<char const*>(char const*)
+  0.00      0.00     0.00       32     0.00     0.00  char* std::__niter_wrap<char*>(char* const&, char*)
+  0.00      0.00     0.00       30     0.00     0.00  TAvl<TVector, long>::Height(TAvl<TVector, long>::TAvlNode const*)
+  0.00      0.00     0.00       16     0.00     0.00  TVector::TVector(TVector const&)
+  0.00      0.00     0.00       16     0.00     0.00  TVector::operator=(char const*)
+  0.00      0.00     0.00       16     0.00     0.00  char* std::__copy_move_a<false, char const*, char*>(char const*, char const*, char*)
+  0.00      0.00     0.00       16     0.00     0.00  char* std::__copy_move_a<false, char*, char*>(char*, char*, char*)
+  0.00      0.00     0.00       16     0.00     0.00  char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*)
+  0.00      0.00     0.00       16     0.00     0.00  char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*)
+  0.00      0.00     0.00       16     0.00     0.00  int const& std::min<int>(int const&, int const&)
+  0.00      0.00     0.00       16     0.00     0.00  char* std::copy<char const*, char*>(char const*, char const*, char*)
+  0.00      0.00     0.00       16     0.00     0.00  char* std::copy<char*, char*>(char*, char*, char*)
+  0.00      0.00     0.00       16     0.00     0.00  std::remove_reference<TVector&>::type&& std::move<TVector&>(TVector&)
+  0.00      0.00     0.00       16     0.00     0.00  operator<(TVector const&, TVector const&)
+  0.00      0.00     0.00       16     0.00     0.00  operator>>(std::istream&, TVector&)
+  0.00      0.00     0.00       14     0.00     0.00  TVector::TVector(TVector&&)
+  0.00      0.00     0.00        8     0.00     0.00  TAvl<TVector, long>::Reheight(TAvl<TVector, long>::TAvlNode*)
+  0.00      0.00     0.00        8     0.00     0.00  TVector::TVector()
+  0.00      0.00     0.00        8     0.00     0.00  long const& std::max<long>(long const&, long const&)
+  0.00      0.00     0.00        7     0.00     0.00  TDetailAvl::Lower(TVector&)
+  0.00      0.00     0.00        7     0.00     0.00  TAvl<TVector, long>::Balance(TAvl<TVector, long>::TAvlNode const*)
+  0.00      0.00     0.00        6     0.00     0.00  TAvl<TVector, long>::Rebalance(TAvl<TVector, long>::TAvlNode*)
+  0.00      0.00     0.00        6     0.00     0.00  operator>(TVector const&, TVector const&)
+  0.00      0.00     0.00        4     0.00     0.00  TDetailAvl::DetailInsert()
+  0.00      0.00     0.00        4     0.00     0.00  TAvl<TVector, long>::InsertPrint(TAvl<TVector, long>::TAvlNode*, TVector, long)
+  0.00      0.00     0.00        4     0.00     0.00  TAvl<TVector, long>::AddPrint(TVector, long)
+  0.00      0.00     0.00        4     0.00     0.00  TAvl<TVector, long>::TAvlNode::TAvlNode(TVector, long)
+  0.00      0.00     0.00        4     0.00     0.00  TAvl<TVector, long>::TAvlNode::~TAvlNode()
+  0.00      0.00     0.00        4     0.00     0.00  TVector::Cstr() const
+  0.00      0.00     0.00        2     0.00     0.00  TDetailAvl::DetailFind(TVector const&)
+  0.00      0.00     0.00        2     0.00     0.00  TAvl<TVector, long>::Find(TVector)
+  0.00      0.00     0.00        2     0.00     0.00  TAvl<TVector, long>::Search(TAvl<TVector, long>::TAvlNode*, TVector)
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZlsRSoRK7TVector
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  TDetailAvl::DetailRemove()
+  0.00      0.00     0.00        1     0.00     0.00  TDetailAvl::OpenFileSave(TVector&)
+  0.00      0.00     0.00        1     0.00     0.00  TDetailAvl::Save(std::ostream&, TAvl<TVector, long>::TAvlNode const*)
+  0.00      0.00     0.00        1     0.00     0.00  TDetailAvl::SaveLoad()
+  0.00      0.00     0.00        1     0.00     0.00  TDetailAvl::TDetailAvl()
+  0.00      0.00     0.00        1     0.00     0.00  TDetailAvl::~TDetailAvl()
+  0.00      0.00     0.00        1     0.00     0.00  TAvl<TVector, long>::TreeDelete(TAvl<TVector, long>::TAvlNode*)
+  0.00      0.00     0.00        1     0.00     0.00  TAvl<TVector, long>::DeletePrint(TVector)
+  0.00      0.00     0.00        1     0.00     0.00  TAvl<TVector, long>::RemovePrint(TAvl<TVector, long>::TAvlNode*, TVector)
+  0.00      0.00     0.00        1     0.00     0.00  TAvl<TVector, long>::RotateRight(TAvl<TVector, long>::TAvlNode*)
+  0.00      0.00     0.00        1     0.00     0.00  TAvl<TVector, long>::TAvl()
+  0.00      0.00     0.00        1     0.00     0.00  TAvl<TVector, long>::~TAvl()
+  0.00      0.00     0.00        1     0.00     0.00  std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00      66/170         TVector::operator[](int) const [11]
+                0.00    0.00     104/170         TVector::At(int) [9]
+[8]      0.0    0.00    0.00     170         TVector::At(int) const [8]
+-----------------------------------------------
+                0.00    0.00     104/104         TVector::operator[](int) [10]
+[9]      0.0    0.00    0.00     104         TVector::At(int) [9]
+                0.00    0.00     104/170         TVector::At(int) const [8]
+-----------------------------------------------
+                0.00    0.00       1/104         TDetailAvl::SaveLoad() [55]
+                0.00    0.00      21/104         main [6]
+                0.00    0.00      82/104         TDetailAvl::Lower(TVector&) [37]
+[10]     0.0    0.00    0.00     104         TVector::operator[](int) [10]
+                0.00    0.00     104/104         TVector::At(int) [9]
+-----------------------------------------------
+                0.00    0.00      66/66          operator<(TVector const&, TVector const&) [31]
+[11]     0.0    0.00    0.00      66         TVector::operator[](int) const [11]
+                0.00    0.00      66/170         TVector::At(int) const [8]
+-----------------------------------------------
+                0.00    0.00      16/64          char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*) [25]
+                0.00    0.00      48/64          char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*) [26]
+[12]     0.0    0.00    0.00      64         char* std::__niter_base<char*>(char*) [12]
+-----------------------------------------------
+                0.00    0.00       1/61          main [6]
+                0.00    0.00       3/61          TDetailAvl::Save(std::ostream&, TAvl<TVector, long>::TAvlNode const*) [54]
+                0.00    0.00       7/61          TDetailAvl::Lower(TVector&) [37]
+                0.00    0.00      50/61          operator<(TVector const&, TVector const&) [31]
+[13]     0.0    0.00    0.00      61         TVector::Size() const [13]
+-----------------------------------------------
+                0.00    0.00       1/38          main [6]
+                0.00    0.00       1/38          TAvl<TVector, long>::DeletePrint(TVector) [59]
+                0.00    0.00       1/38          TAvl<TVector, long>::RemovePrint(TAvl<TVector, long>::TAvlNode*, TVector) [60]
+                0.00    0.00       2/38          TDetailAvl::DetailRemove() [52]
+                0.00    0.00       2/38          TDetailAvl::SaveLoad() [55]
+                0.00    0.00       2/38          TAvl<TVector, long>::Find(TVector) [48]
+                0.00    0.00       4/38          TDetailAvl::DetailFind(TVector const&) [47]
+                0.00    0.00       4/38          TAvl<TVector, long>::TAvlNode::~TAvlNode() [45]
+                0.00    0.00       4/38          TAvl<TVector, long>::AddPrint(TVector, long) [43]
+                0.00    0.00       8/38          TDetailAvl::DetailInsert() [41]
+                0.00    0.00       9/38          TAvl<TVector, long>::InsertPrint(TAvl<TVector, long>::TAvlNode*, TVector, long) [42]
+[14]     0.0    0.00    0.00      38         TVector::~TVector() [14]
+-----------------------------------------------
+                0.00    0.00      16/32          char* std::__copy_move_a<false, char const*, char*>(char const*, char const*, char*) [23]
+                0.00    0.00      16/32          char* std::__copy_move_a<false, char*, char*>(char*, char*, char*) [24]
+[15]     0.0    0.00    0.00      32         char* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<char>(char const*, char const*, char*) [15]
+-----------------------------------------------
+                0.00    0.00      32/32          char* std::copy<char const*, char*>(char const*, char const*, char*) [28]
+[16]     0.0    0.00    0.00      32         char const* std::__miter_base<char const*>(char const*) [16]
+-----------------------------------------------
+                0.00    0.00      32/32          char* std::copy<char*, char*>(char*, char*, char*) [29]
+[17]     0.0    0.00    0.00      32         char* std::__miter_base<char*>(char*) [17]
+-----------------------------------------------
+                0.00    0.00      32/32          char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*) [25]
+[18]     0.0    0.00    0.00      32         char const* std::__niter_base<char const*>(char const*) [18]
+-----------------------------------------------
+                0.00    0.00      16/32          char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*) [25]
+                0.00    0.00      16/32          char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*) [26]
+[19]     0.0    0.00    0.00      32         char* std::__niter_wrap<char*>(char* const&, char*) [19]
+-----------------------------------------------
+                0.00    0.00      14/30          TAvl<TVector, long>::Balance(TAvl<TVector, long>::TAvlNode const*) [38]
+                0.00    0.00      16/30          TAvl<TVector, long>::Reheight(TAvl<TVector, long>::TAvlNode*) [34]
+[20]     0.0    0.00    0.00      30         TAvl<TVector, long>::Height(TAvl<TVector, long>::TAvlNode const*) [20]
+-----------------------------------------------
+                0.00    0.00       1/16          TAvl<TVector, long>::RemovePrint(TAvl<TVector, long>::TAvlNode*, TVector) [60]
+                0.00    0.00       2/16          TDetailAvl::DetailFind(TVector const&) [47]
+                0.00    0.00       4/16          TAvl<TVector, long>::TAvlNode::TAvlNode(TVector, long) [44]
+                0.00    0.00       9/16          TAvl<TVector, long>::InsertPrint(TAvl<TVector, long>::TAvlNode*, TVector, long) [42]
+[21]     0.0    0.00    0.00      16         TVector::TVector(TVector const&) [21]
+                0.00    0.00      16/16          char* std::copy<char*, char*>(char*, char*, char*) [29]
+-----------------------------------------------
+                0.00    0.00      16/16          operator>>(std::istream&, TVector&) [32]
+[22]     0.0    0.00    0.00      16         TVector::operator=(char const*) [22]
+                0.00    0.00      16/16          char* std::copy<char const*, char*>(char const*, char const*, char*) [28]
+-----------------------------------------------
+                0.00    0.00      16/16          char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*) [25]
+[23]     0.0    0.00    0.00      16         char* std::__copy_move_a<false, char const*, char*>(char const*, char const*, char*) [23]
+                0.00    0.00      16/32          char* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<char>(char const*, char const*, char*) [15]
+-----------------------------------------------
+                0.00    0.00      16/16          char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*) [26]
+[24]     0.0    0.00    0.00      16         char* std::__copy_move_a<false, char*, char*>(char*, char*, char*) [24]
+                0.00    0.00      16/32          char* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<char>(char const*, char const*, char*) [15]
+-----------------------------------------------
+                0.00    0.00      16/16          char* std::copy<char const*, char*>(char const*, char const*, char*) [28]
+[25]     0.0    0.00    0.00      16         char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*) [25]
+                0.00    0.00      32/32          char const* std::__niter_base<char const*>(char const*) [18]
+                0.00    0.00      16/64          char* std::__niter_base<char*>(char*) [12]
+                0.00    0.00      16/16          char* std::__copy_move_a<false, char const*, char*>(char const*, char const*, char*) [23]
+                0.00    0.00      16/32          char* std::__niter_wrap<char*>(char* const&, char*) [19]
+-----------------------------------------------
+                0.00    0.00      16/16          char* std::copy<char*, char*>(char*, char*, char*) [29]
+[26]     0.0    0.00    0.00      16         char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*) [26]
+                0.00    0.00      48/64          char* std::__niter_base<char*>(char*) [12]
+                0.00    0.00      16/16          char* std::__copy_move_a<false, char*, char*>(char*, char*, char*) [24]
+                0.00    0.00      16/32          char* std::__niter_wrap<char*>(char* const&, char*) [19]
+-----------------------------------------------
+                0.00    0.00      16/16          operator<(TVector const&, TVector const&) [31]
+[27]     0.0    0.00    0.00      16         int const& std::min<int>(int const&, int const&) [27]
+-----------------------------------------------
+                0.00    0.00      16/16          TVector::operator=(char const*) [22]
+[28]     0.0    0.00    0.00      16         char* std::copy<char const*, char*>(char const*, char const*, char*) [28]
+                0.00    0.00      32/32          char const* std::__miter_base<char const*>(char const*) [16]
+                0.00    0.00      16/16          char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*) [25]
+-----------------------------------------------
+                0.00    0.00      16/16          TVector::TVector(TVector const&) [21]
+[29]     0.0    0.00    0.00      16         char* std::copy<char*, char*>(char*, char*, char*) [29]
+                0.00    0.00      32/32          char* std::__miter_base<char*>(char*) [17]
+                0.00    0.00      16/16          char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*) [26]
+-----------------------------------------------
+                0.00    0.00       1/16          TDetailAvl::DetailRemove() [52]
+                0.00    0.00       1/16          TAvl<TVector, long>::DeletePrint(TVector) [59]
+                0.00    0.00       2/16          main [6]
+                0.00    0.00       2/16          TDetailAvl::DetailFind(TVector const&) [47]
+                0.00    0.00       2/16          TAvl<TVector, long>::Find(TVector) [48]
+                0.00    0.00       4/16          TDetailAvl::DetailInsert() [41]
+                0.00    0.00       4/16          TAvl<TVector, long>::AddPrint(TVector, long) [43]
+[30]     0.0    0.00    0.00      16         std::remove_reference<TVector&>::type&& std::move<TVector&>(TVector&) [30]
+-----------------------------------------------
+                0.00    0.00       2/16          TAvl<TVector, long>::RemovePrint(TAvl<TVector, long>::TAvlNode*, TVector) [60]
+                0.00    0.00       3/16          TAvl<TVector, long>::Search(TAvl<TVector, long>::TAvlNode*, TVector) [49]
+                0.00    0.00       5/16          TAvl<TVector, long>::InsertPrint(TAvl<TVector, long>::TAvlNode*, TVector, long) [42]
+                0.00    0.00       6/16          operator>(TVector const&, TVector const&) [40]
+[31]     0.0    0.00    0.00      16         operator<(TVector const&, TVector const&) [31]
+                0.00    0.00      66/66          TVector::operator[](int) const [11]
+                0.00    0.00      50/61          TVector::Size() const [13]
+                0.00    0.00      16/16          int const& std::min<int>(int const&, int const&) [27]
+-----------------------------------------------
+                0.00    0.00       1/16          TDetailAvl::DetailRemove() [52]
+                0.00    0.00       2/16          TDetailAvl::SaveLoad() [55]
+                0.00    0.00       4/16          TDetailAvl::DetailInsert() [41]
+                0.00    0.00       9/16          main [6]
+[32]     0.0    0.00    0.00      16         operator>>(std::istream&, TVector&) [32]
+                0.00    0.00      16/16          TVector::operator=(char const*) [22]
+-----------------------------------------------
+                0.00    0.00       1/14          TDetailAvl::DetailRemove() [52]
+                0.00    0.00       1/14          TAvl<TVector, long>::DeletePrint(TVector) [59]
+                0.00    0.00       2/14          TDetailAvl::DetailFind(TVector const&) [47]
+                0.00    0.00       2/14          TAvl<TVector, long>::Find(TVector) [48]
+                0.00    0.00       4/14          TDetailAvl::DetailInsert() [41]
+                0.00    0.00       4/14          TAvl<TVector, long>::AddPrint(TVector, long) [43]
+[33]     0.0    0.00    0.00      14         TVector::TVector(TVector&&) [33]
+-----------------------------------------------
+                0.00    0.00       2/8           TAvl<TVector, long>::RotateRight(TAvl<TVector, long>::TAvlNode*) [61]
+                0.00    0.00       6/8           TAvl<TVector, long>::Rebalance(TAvl<TVector, long>::TAvlNode*) [39]
+[34]     0.0    0.00    0.00       8         TAvl<TVector, long>::Reheight(TAvl<TVector, long>::TAvlNode*) [34]
+                0.00    0.00      16/30          TAvl<TVector, long>::Height(TAvl<TVector, long>::TAvlNode const*) [20]
+                0.00    0.00       8/8           long const& std::max<long>(long const&, long const&) [36]
+-----------------------------------------------
+                0.00    0.00       1/8           main [6]
+                0.00    0.00       1/8           TDetailAvl::DetailRemove() [52]
+                0.00    0.00       2/8           TDetailAvl::SaveLoad() [55]
+                0.00    0.00       4/8           TDetailAvl::DetailInsert() [41]
+[35]     0.0    0.00    0.00       8         TVector::TVector() [35]
+-----------------------------------------------
+                0.00    0.00       8/8           TAvl<TVector, long>::Reheight(TAvl<TVector, long>::TAvlNode*) [34]
+[36]     0.0    0.00    0.00       8         long const& std::max<long>(long const&, long const&) [36]
+-----------------------------------------------
+                0.00    0.00       1/7           TDetailAvl::DetailRemove() [52]
+                0.00    0.00       2/7           TDetailAvl::DetailFind(TVector const&) [47]
+                0.00    0.00       4/7           TDetailAvl::DetailInsert() [41]
+[37]     0.0    0.00    0.00       7         TDetailAvl::Lower(TVector&) [37]
+                0.00    0.00      82/104         TVector::operator[](int) [10]
+                0.00    0.00       7/61          TVector::Size() const [13]
+-----------------------------------------------
+                0.00    0.00       7/7           TAvl<TVector, long>::Rebalance(TAvl<TVector, long>::TAvlNode*) [39]
+[38]     0.0    0.00    0.00       7         TAvl<TVector, long>::Balance(TAvl<TVector, long>::TAvlNode const*) [38]
+                0.00    0.00      14/30          TAvl<TVector, long>::Height(TAvl<TVector, long>::TAvlNode const*) [20]
+-----------------------------------------------
+                0.00    0.00       1/6           TAvl<TVector, long>::RemovePrint(TAvl<TVector, long>::TAvlNode*, TVector) [60]
+                0.00    0.00       5/6           TAvl<TVector, long>::InsertPrint(TAvl<TVector, long>::TAvlNode*, TVector, long) [42]
+[39]     0.0    0.00    0.00       6         TAvl<TVector, long>::Rebalance(TAvl<TVector, long>::TAvlNode*) [39]
+                0.00    0.00       7/7           TAvl<TVector, long>::Balance(TAvl<TVector, long>::TAvlNode const*) [38]
+                0.00    0.00       6/8           TAvl<TVector, long>::Reheight(TAvl<TVector, long>::TAvlNode*) [34]
+                0.00    0.00       1/1           TAvl<TVector, long>::RotateRight(TAvl<TVector, long>::TAvlNode*) [61]
+-----------------------------------------------
+                0.00    0.00       2/6           TAvl<TVector, long>::InsertPrint(TAvl<TVector, long>::TAvlNode*, TVector, long) [42]
+                0.00    0.00       2/6           TAvl<TVector, long>::RemovePrint(TAvl<TVector, long>::TAvlNode*, TVector) [60]
+                0.00    0.00       2/6           TAvl<TVector, long>::Search(TAvl<TVector, long>::TAvlNode*, TVector) [49]
+[40]     0.0    0.00    0.00       6         operator>(TVector const&, TVector const&) [40]
+                0.00    0.00       6/16          operator<(TVector const&, TVector const&) [31]
+-----------------------------------------------
+                0.00    0.00       4/4           main [6]
+[41]     0.0    0.00    0.00       4         TDetailAvl::DetailInsert() [41]
+                0.00    0.00       8/38          TVector::~TVector() [14]
+                0.00    0.00       4/8           TVector::TVector() [35]
+                0.00    0.00       4/16          operator>>(std::istream&, TVector&) [32]
+                0.00    0.00       4/7           TDetailAvl::Lower(TVector&) [37]
+                0.00    0.00       4/16          std::remove_reference<TVector&>::type&& std::move<TVector&>(TVector&) [30]
+                0.00    0.00       4/14          TVector::TVector(TVector&&) [33]
+                0.00    0.00       4/4           TAvl<TVector, long>::AddPrint(TVector, long) [43]
+-----------------------------------------------
+                                   5             TAvl<TVector, long>::InsertPrint(TAvl<TVector, long>::TAvlNode*, TVector, long) [42]
+                0.00    0.00       4/4           TAvl<TVector, long>::AddPrint(TVector, long) [43]
+[42]     0.0    0.00    0.00       4+5       TAvl<TVector, long>::InsertPrint(TAvl<TVector, long>::TAvlNode*, TVector, long) [42]
+                0.00    0.00       9/16          TVector::TVector(TVector const&) [21]
+                0.00    0.00       9/38          TVector::~TVector() [14]
+                0.00    0.00       5/16          operator<(TVector const&, TVector const&) [31]
+                0.00    0.00       5/6           TAvl<TVector, long>::Rebalance(TAvl<TVector, long>::TAvlNode*) [39]
+                0.00    0.00       4/4           TAvl<TVector, long>::TAvlNode::TAvlNode(TVector, long) [44]
+                0.00    0.00       2/6           operator>(TVector const&, TVector const&) [40]
+                                   5             TAvl<TVector, long>::InsertPrint(TAvl<TVector, long>::TAvlNode*, TVector, long) [42]
+-----------------------------------------------
+                0.00    0.00       4/4           TDetailAvl::DetailInsert() [41]
+[43]     0.0    0.00    0.00       4         TAvl<TVector, long>::AddPrint(TVector, long) [43]
+                0.00    0.00       4/16          std::remove_reference<TVector&>::type&& std::move<TVector&>(TVector&) [30]
+                0.00    0.00       4/14          TVector::TVector(TVector&&) [33]
+                0.00    0.00       4/4           TAvl<TVector, long>::InsertPrint(TAvl<TVector, long>::TAvlNode*, TVector, long) [42]
+                0.00    0.00       4/38          TVector::~TVector() [14]
+-----------------------------------------------
+                0.00    0.00       4/4           TAvl<TVector, long>::InsertPrint(TAvl<TVector, long>::TAvlNode*, TVector, long) [42]
+[44]     0.0    0.00    0.00       4         TAvl<TVector, long>::TAvlNode::TAvlNode(TVector, long) [44]
+                0.00    0.00       4/16          TVector::TVector(TVector const&) [21]
+-----------------------------------------------
+                0.00    0.00       1/4           TAvl<TVector, long>::RemovePrint(TAvl<TVector, long>::TAvlNode*, TVector) [60]
+                0.00    0.00       3/4           TAvl<TVector, long>::TreeDelete(TAvl<TVector, long>::TAvlNode*) [58]
+[45]     0.0    0.00    0.00       4         TAvl<TVector, long>::TAvlNode::~TAvlNode() [45]
+                0.00    0.00       4/38          TVector::~TVector() [14]
+-----------------------------------------------
+                0.00    0.00       1/4           TDetailAvl::OpenFileSave(TVector&) [53]
+                0.00    0.00       3/4           TDetailAvl::Save(std::ostream&, TAvl<TVector, long>::TAvlNode const*) [54]
+[46]     0.0    0.00    0.00       4         TVector::Cstr() const [46]
+-----------------------------------------------
+                0.00    0.00       2/2           main [6]
+[47]     0.0    0.00    0.00       2         TDetailAvl::DetailFind(TVector const&) [47]
+                0.00    0.00       4/38          TVector::~TVector() [14]
+                0.00    0.00       2/16          TVector::TVector(TVector const&) [21]
+                0.00    0.00       2/7           TDetailAvl::Lower(TVector&) [37]
+                0.00    0.00       2/16          std::remove_reference<TVector&>::type&& std::move<TVector&>(TVector&) [30]
+                0.00    0.00       2/14          TVector::TVector(TVector&&) [33]
+                0.00    0.00       2/2           TAvl<TVector, long>::Find(TVector) [48]
+-----------------------------------------------
+                0.00    0.00       2/2           TDetailAvl::DetailFind(TVector const&) [47]
+[48]     0.0    0.00    0.00       2         TAvl<TVector, long>::Find(TVector) [48]
+                0.00    0.00       2/16          std::remove_reference<TVector&>::type&& std::move<TVector&>(TVector&) [30]
+                0.00    0.00       2/14          TVector::TVector(TVector&&) [33]
+                0.00    0.00       2/2           TAvl<TVector, long>::Search(TAvl<TVector, long>::TAvlNode*, TVector) [49]
+                0.00    0.00       2/38          TVector::~TVector() [14]
+-----------------------------------------------
+                0.00    0.00       2/2           TAvl<TVector, long>::Find(TVector) [48]
+[49]     0.0    0.00    0.00       2         TAvl<TVector, long>::Search(TAvl<TVector, long>::TAvlNode*, TVector) [49]
+                0.00    0.00       3/16          operator<(TVector const&, TVector const&) [31]
+                0.00    0.00       2/6           operator>(TVector const&, TVector const&) [40]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [82]
+[50]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZlsRSoRK7TVector [50]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [51]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZlsRSoRK7TVector [50]
+[51]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [51]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[52]     0.0    0.00    0.00       1         TDetailAvl::DetailRemove() [52]
+                0.00    0.00       2/38          TVector::~TVector() [14]
+                0.00    0.00       1/8           TVector::TVector() [35]
+                0.00    0.00       1/16          operator>>(std::istream&, TVector&) [32]
+                0.00    0.00       1/7           TDetailAvl::Lower(TVector&) [37]
+                0.00    0.00       1/16          std::remove_reference<TVector&>::type&& std::move<TVector&>(TVector&) [30]
+                0.00    0.00       1/14          TVector::TVector(TVector&&) [33]
+                0.00    0.00       1/1           TAvl<TVector, long>::DeletePrint(TVector) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           TDetailAvl::SaveLoad() [55]
+[53]     0.0    0.00    0.00       1         TDetailAvl::OpenFileSave(TVector&) [53]
+                0.00    0.00       1/4           TVector::Cstr() const [46]
+                0.00    0.00       1/1           std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [64]
+                0.00    0.00       1/1           TDetailAvl::Save(std::ostream&, TAvl<TVector, long>::TAvlNode const*) [54]
+-----------------------------------------------
+                                   2             TDetailAvl::Save(std::ostream&, TAvl<TVector, long>::TAvlNode const*) [54]
+                0.00    0.00       1/1           TDetailAvl::OpenFileSave(TVector&) [53]
+[54]     0.0    0.00    0.00       1+2       TDetailAvl::Save(std::ostream&, TAvl<TVector, long>::TAvlNode const*) [54]
+                0.00    0.00       3/61          TVector::Size() const [13]
+                0.00    0.00       3/4           TVector::Cstr() const [46]
+                                   2             TDetailAvl::Save(std::ostream&, TAvl<TVector, long>::TAvlNode const*) [54]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[55]     0.0    0.00    0.00       1         TDetailAvl::SaveLoad() [55]
+                0.00    0.00       2/8           TVector::TVector() [35]
+                0.00    0.00       2/16          operator>>(std::istream&, TVector&) [32]
+                0.00    0.00       2/38          TVector::~TVector() [14]
+                0.00    0.00       1/104         TVector::operator[](int) [10]
+                0.00    0.00       1/1           TDetailAvl::OpenFileSave(TVector&) [53]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[56]     0.0    0.00    0.00       1         TDetailAvl::TDetailAvl() [56]
+                0.00    0.00       1/1           TAvl<TVector, long>::TAvl() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[57]     0.0    0.00    0.00       1         TDetailAvl::~TDetailAvl() [57]
+                0.00    0.00       1/1           TAvl<TVector, long>::~TAvl() [63]
+-----------------------------------------------
+                                   6             TAvl<TVector, long>::TreeDelete(TAvl<TVector, long>::TAvlNode*) [58]
+                0.00    0.00       1/1           TAvl<TVector, long>::~TAvl() [63]
+[58]     0.0    0.00    0.00       1+6       TAvl<TVector, long>::TreeDelete(TAvl<TVector, long>::TAvlNode*) [58]
+                0.00    0.00       3/4           TAvl<TVector, long>::TAvlNode::~TAvlNode() [45]
+                                   6             TAvl<TVector, long>::TreeDelete(TAvl<TVector, long>::TAvlNode*) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           TDetailAvl::DetailRemove() [52]
+[59]     0.0    0.00    0.00       1         TAvl<TVector, long>::DeletePrint(TVector) [59]
+                0.00    0.00       1/16          std::remove_reference<TVector&>::type&& std::move<TVector&>(TVector&) [30]
+                0.00    0.00       1/14          TVector::TVector(TVector&&) [33]
+                0.00    0.00       1/1           TAvl<TVector, long>::RemovePrint(TAvl<TVector, long>::TAvlNode*, TVector) [60]
+                0.00    0.00       1/38          TVector::~TVector() [14]
+-----------------------------------------------
+                                   1             TAvl<TVector, long>::RemovePrint(TAvl<TVector, long>::TAvlNode*, TVector) [60]
+                0.00    0.00       1/1           TAvl<TVector, long>::DeletePrint(TVector) [59]
+[60]     0.0    0.00    0.00       1+1       TAvl<TVector, long>::RemovePrint(TAvl<TVector, long>::TAvlNode*, TVector) [60]
+                0.00    0.00       2/16          operator<(TVector const&, TVector const&) [31]
+                0.00    0.00       2/6           operator>(TVector const&, TVector const&) [40]
+                0.00    0.00       1/16          TVector::TVector(TVector const&) [21]
+                0.00    0.00       1/38          TVector::~TVector() [14]
+                0.00    0.00       1/4           TAvl<TVector, long>::TAvlNode::~TAvlNode() [45]
+                0.00    0.00       1/6           TAvl<TVector, long>::Rebalance(TAvl<TVector, long>::TAvlNode*) [39]
+                                   1             TAvl<TVector, long>::RemovePrint(TAvl<TVector, long>::TAvlNode*, TVector) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           TAvl<TVector, long>::Rebalance(TAvl<TVector, long>::TAvlNode*) [39]
+[61]     0.0    0.00    0.00       1         TAvl<TVector, long>::RotateRight(TAvl<TVector, long>::TAvlNode*) [61]
+                0.00    0.00       2/8           TAvl<TVector, long>::Reheight(TAvl<TVector, long>::TAvlNode*) [34]
+-----------------------------------------------
+                0.00    0.00       1/1           TDetailAvl::TDetailAvl() [56]
+[62]     0.0    0.00    0.00       1         TAvl<TVector, long>::TAvl() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           TDetailAvl::~TDetailAvl() [57]
+[63]     0.0    0.00    0.00       1         TAvl<TVector, long>::~TAvl() [63]
+                0.00    0.00       1/1           TAvl<TVector, long>::TreeDelete(TAvl<TVector, long>::TAvlNode*) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           TDetailAvl::OpenFileSave(TVector&) [53]
+[64]     0.0    0.00    0.00       1         std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [64]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [50] _GLOBAL__sub_I__ZlsRSoRK7TVector [38] TAvl<TVector, long>::Balance(TAvl<TVector, long>::TAvlNode const*) [15] char* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<char>(char const*, char const*, char*)
+  [51] __static_initialization_and_destruction_0(int, int) [43] TAvl<TVector, long>::AddPrint(TVector, long) [16] char const* std::__miter_base<char const*>(char const*)
+  [47] TDetailAvl::DetailFind(TVector const&) [34] TAvl<TVector, long>::Reheight(TAvl<TVector, long>::TAvlNode*) [17] char* std::__miter_base<char*>(char*)
+  [41] TDetailAvl::DetailInsert() [44] TAvl<TVector, long>::TAvlNode::TAvlNode(TVector, long) [18] char const* std::__niter_base<char const*>(char const*)
+  [52] TDetailAvl::DetailRemove() [45] TAvl<TVector, long>::TAvlNode::~TAvlNode() [12] char* std::__niter_base<char*>(char*)
+  [53] TDetailAvl::OpenFileSave(TVector&) [39] TAvl<TVector, long>::Rebalance(TAvl<TVector, long>::TAvlNode*) [19] char* std::__niter_wrap<char*>(char* const&, char*)
+  [54] TDetailAvl::Save(std::ostream&, TAvl<TVector, long>::TAvlNode const*) [62] TAvl<TVector, long>::TAvl() [23] char* std::__copy_move_a<false, char const*, char*>(char const*, char const*, char*)
+  [37] TDetailAvl::Lower(TVector&) [63] TAvl<TVector, long>::~TAvl() [24] char* std::__copy_move_a<false, char*, char*>(char*, char*, char*)
+  [55] TDetailAvl::SaveLoad()  [9] TVector::At(int)       [25] char* std::__copy_move_a2<false, char const*, char*>(char const*, char const*, char*)
+  [56] TDetailAvl::TDetailAvl() [21] TVector::TVector(TVector const&) [26] char* std::__copy_move_a2<false, char*, char*>(char*, char*, char*)
+  [57] TDetailAvl::~TDetailAvl() [35] TVector::TVector()  [36] long const& std::max<long>(long const&, long const&)
+  [58] TAvl<TVector, long>::TreeDelete(TAvl<TVector, long>::TAvlNode*) [33] TVector::TVector(TVector&&) [27] int const& std::min<int>(int const&, int const&)
+  [59] TAvl<TVector, long>::DeletePrint(TVector) [14] TVector::~TVector() [28] char* std::copy<char const*, char*>(char const*, char const*, char*)
+  [42] TAvl<TVector, long>::InsertPrint(TAvl<TVector, long>::TAvlNode*, TVector, long) [22] TVector::operator=(char const*) [29] char* std::copy<char*, char*>(char*, char*, char*)
+  [60] TAvl<TVector, long>::RemovePrint(TAvl<TVector, long>::TAvlNode*, TVector) [10] TVector::operator[](int) [30] std::remove_reference<TVector&>::type&& std::move<TVector&>(TVector&)
+  [61] TAvl<TVector, long>::RotateRight(TAvl<TVector, long>::TAvlNode*) [8] TVector::At(int) const [64] std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+  [48] TAvl<TVector, long>::Find(TVector) [46] TVector::Cstr() const [40] operator>(TVector const&, TVector const&)
+  [20] TAvl<TVector, long>::Height(TAvl<TVector, long>::TAvlNode const*) [13] TVector::Size() const [31] operator<(TVector const&, TVector const&)
+  [49] TAvl<TVector, long>::Search(TAvl<TVector, long>::TAvlNode*, TVector) [11] TVector::operator[](int) const [32] operator>>(std::istream&, TVector&)

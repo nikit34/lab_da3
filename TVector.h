@@ -131,23 +131,16 @@ struct TVector {
 		return *this;
 	}
 
-	const char& At(int index) const {
+	const char& operator[](uint64_t index) const {
 		if (index >= 0 && index <= this->size)
 			return this->data[index];
 		throw std::out_of_range("You are doing this wrong!");
 	}
 
-	char& At(int index) {
-		const char& elem = const_cast<const TVector*>(this)->At(index);
-		return const_cast<char&>(elem);
-	}
-
-	const char& operator[](int index) const {
-		return At(index);
-	}
-
-	char& operator[](int index) {
-		return At(index);
+	char& operator[](uint64_t index) {
+		if (index >= 0 && index <= this->size)
+			return this->data[index];
+		throw std::out_of_range("You are doing this wrong!");
 	}
 
 	friend std::ostream& operator<<(std::ostream& os, const TVector& str);

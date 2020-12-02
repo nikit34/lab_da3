@@ -1,0 +1,35 @@
+1606889229: 83: Dmalloc version '5.5.2' from 'http://dmalloc.com/'
+1606889229: 83: flags = 0x4e48503, logfile 'logfile'
+1606889229: 83: interval = 100, addr = 0, seen # = 0, limit = 0
+1606889229: 83: threads enabled, lock-on = 0, lock-init = 2
+1606889229: 83: starting time = 1606889218
+1606889229: 83: process pid = 3025
+1606889229: 83: Dumping Chunk Statistics:
+1606889229: 83: basic-block 4096 bytes, alignment 8 bytes
+1606889229: 83: heap address range: 0x7f7ced230000 to 0x7f7ced3f1000, 1839104 bytes
+1606889229: 83:     user blocks: 61 blocks, 224256 bytes (73%)
+1606889229: 83:    admin blocks: 14 blocks, 57344 bytes (18%)
+1606889229: 83:    total blocks: 75 blocks, 307200 bytes
+1606889229: 83: heap checked 1
+1606889229: 83: alloc calls: malloc 45, calloc 0, realloc 0, free 38
+1606889229: 83: alloc calls: recalloc 0, memalign 0, posix_memalign 0, valloc 0
+1606889229: 83: alloc calls: new 0, delete 0
+1606889229: 83:   current memory in use: 195584 bytes (7 pnts)
+1606889229: 83:  total memory allocated: 204640 bytes (45 pnts)
+1606889229: 83:  max in use at one time: 204429 bytes (20 pnts)
+1606889229: 83: max alloced with 1 call: 72704 bytes
+1606889229: 83: max unused memory space: 29891 bytes (12%)
+1606889229: 83: top 10 allocations:
+1606889229: 83:  total-size  count in-use-size  count  source
+1606889229: 83:           0      0           0      0  Total of 0
+1606889229: 83: Dumping Not-Freed Pointers Changed Since Start:
+1606889229: 83:  not freed: '0x7f7ced340008|s1' (32768 bytes) from 'unknown'
+1606889229: 83:  not freed: '0x7f7ced350008|s1' (32768 bytes) from 'unknown'
+1606889229: 83:  not freed: '0x7f7ced360008|s1' (32768 bytes) from 'unknown'
+1606889229: 83:  not freed: '0x7f7ced370008|s1' (8192 bytes) from 'unknown'
+1606889229: 83:  not freed: '0x7f7ced380008|s1' (8192 bytes) from 'unknown'
+1606889229: 83:  not freed: '0x7f7ced3a0008|s1' (8192 bytes) from 'unknown'
+1606889229: 83:  not freed: '0x7f7ced3b0008|s1' (72704 bytes) from 'unknown'
+1606889229: 83:  total-size  count  source
+1606889229: 83:           0      0  Total of 0
+1606889229: 83: ending time = 1606889229, elapsed since start = 0:00:11
