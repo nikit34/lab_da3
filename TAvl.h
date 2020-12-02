@@ -28,7 +28,7 @@ protected:
 		return node != nullptr ? node->height : 0;
 	}
 
-	int64_t Balance(const TAvlNode* node) {
+	int32_t Balance(const TAvlNode* node) {
 		return Height(node->left) - Height(node->right);
 	}
 
@@ -68,7 +68,7 @@ protected:
 		if (node == nullptr)
 			return nullptr;
 		Reheight(node);
-		int balanceRes = Balance(node);
+		int32_t balanceRes = Balance(node);
 		if (balanceRes == -2) {
 			if (Balance(node->right) == 1)
 				return BigRotateLeft(node);
@@ -85,7 +85,7 @@ protected:
 	TAvlNode* InsertPrint(TAvlNode* node, K k, V v) {
 		if (node == nullptr) {
 			try {
-				node = new TAvlNode(k, v); // std::move(k)
+				node = new TAvlNode(k, v);
 			}
 			catch (std::bad_alloc& e) {
 				std::cout << "ERROR: " << e.what() << "\n";
@@ -106,7 +106,7 @@ protected:
 	TAvlNode* Insert(TAvlNode* node, K k, V v) {
 		if (node == nullptr) {
 			try {
-				node = new TAvlNode(k, v);// std::move(k)
+				node = new TAvlNode(k, v);
 			}
 			catch (std::bad_alloc& e) {
 				return nullptr;
@@ -125,7 +125,7 @@ protected:
 			tempNode->left = RemoveMin(node, tempNode->left);
 		else {
 			TAvlNode* rightChild = tempNode->right;
-			node->key = std::move(tempNode->key); //std::move
+			node->key = std::move(tempNode->key);
 			node->value = tempNode->value;
 			delete tempNode;
 			tempNode = rightChild;
@@ -193,20 +193,6 @@ protected:
 		return Rebalance(node);
 	}
 
-	TAvlNode* Search(TAvlNode* node, K k) {
-		if (node == nullptr)
-			return nullptr;
-		for (TAvlNode* iter = node; iter != nullptr; ) {
-			if (k < iter->key)
-				iter = iter->left;
-			else if (k > iter->key)
-				iter = iter->right;
-			else
-				return iter;
-		}
-		return nullptr;
-	}
-
 	void PrintTree(TAvlNode* node) {
 		if (node != nullptr) {
 			std::cout << "( " << node->value << " )";
@@ -236,7 +222,17 @@ public:
 	}
 
 	TAvlNode* Find(K k) {
-		return Search(root, std::move(k));
+		if (root == nullptr)
+			return nullptr;
+		for (TAvlNode* iter = root; iter != nullptr; ) {
+			if (k < iter->key)
+				iter = iter->left;
+			else if (k > iter->key)
+				iter = iter->right;
+			else
+				return iter;
+		}
+		return nullptr;
 	}
 
 	void Print() {

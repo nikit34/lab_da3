@@ -16,24 +16,18 @@ int main() {
 	TDetailAvl tree;
 
 	while (std::cin >> cmd) {
-		if (cmd[0] == '+') {
+		if (cmd[0] == '+')
 			tree.DetailInsert();
-		}
-		else if (cmd[0] == '-') {
+		else if (cmd[0] == '-')
 			tree.DetailRemove();
-		}
-		else if (cmd[0] == '?') {
+		else if (cmd[0] == '?')
 			return 0;
-		}
-		else if (cmd[0] == '!' && cmd.Size() == 1) {
+		else if (cmd[0] == '!' && cmd.Size() == 1)
 			tree.SaveLoad();
-		}
-		else if (cmd[0] == '=') {
+		else if (cmd[0] == '=')
 			tree.Print();
-		}
-		else {
+		else
 			tree.DetailFind(std::move(cmd));
-		}
 	}
 
 	return 0;

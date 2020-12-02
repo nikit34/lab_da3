@@ -173,11 +173,13 @@ std::istream& operator>>(std::istream& is, TVector& str) {
 }
 
 bool operator<(const TVector& lhs, const TVector& rhs) {
-	uint64_t minSize = std::min(lhs.Size(), rhs.Size());
-	for (uint64_t i = 0; i < minSize; ++i)
+	uint32_t l_size = lhs.Size();
+	uint32_t r_size = rhs.Size();
+	uint32_t minSize = std::min(l_size, r_size);
+	for (uint32_t i = 0; i < minSize; ++i)
 		if (lhs[i] != rhs[i])
 			return lhs[i] < rhs[i];
-	return lhs.Size() < rhs.Size();
+	return l_size < r_size;
 }
 
 bool operator>(const TVector& lhs, const TVector& rhs) {
