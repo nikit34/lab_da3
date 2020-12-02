@@ -5,7 +5,7 @@
 #include "TAvl.h"
 #include "ActionTAvl.h"
 
-#ifndef DMALLOC
+#ifdef DMALLOC
 #include "dmalloc.h"
 #endif
 
@@ -28,9 +28,9 @@ int main() {
 		else if (cmd[0] == '!' && cmd.Size() == 1) {
 			tree.SaveLoad();
 		}
-		/*else if (std::strcmp(cmd.Cstr(), "Print") == 0) {
+		else if (cmd[0] == '=') {
 			tree.Print();
-		}*/
+		}
 		else {
 			tree.DetailFind(std::move(cmd));
 		}
