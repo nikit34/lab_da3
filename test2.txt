@@ -1,0 +1,12 @@
+5 igr 43
+) igr 43
++ 454 435
++ obomvII
++ 5345b4 5
+- igr
+=
+! S res.txt
+igr
+egonet
+onestbutdeleted
+?

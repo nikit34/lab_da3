@@ -1,0 +1,13 @@
++ i3545rpbr4056i5gr 43
++ 43 43
++ nondelete 3
++ 5345b4,353o45b5345omvIIMC9V 5
++ onestbutdeleted 7
+- egonet
+- onestbutdeleted
+=
+! S res.txt
+nondelete
+egonet
+onestbutdeleted
+?
